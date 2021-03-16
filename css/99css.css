@@ -30,6 +30,11 @@ img {vertical-align: middle;}
   overflow: hidden;
 }
 
+.topnav a:hover {
+  background-color: #FF2A2A;
+  color: white;
+}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -433,6 +438,20 @@ font-family: 'Germania One', cursive;
   background-color: #CBCBCB; /* Add a hover color */
 }
 
+.content1-1 p3{
+	visibility: collapse;
+	width: 100%;
+}
+
+.content1 a{
+	visibility: collapse;
+	color: white;
+	text-align: center;
+}
+
+.header1 a{
+	visibility: collapse;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -469,9 +488,32 @@ font-family: 'Germania One', cursive;
 
 @media screen and (max-width: 600px) {
 	.content1 {
-		height: 10%;
+		height: auto;
 	}
 }
+@media screen and (max-width: 600px) {
+	.header1 a{
+		color: white;
+		visibility: visible;
+		text-shadow: 0 0 5px black;
+		text-align: center;
+		width: 100%;
+		padding: 0 35% 0 35%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content1 a {
+		visibility: visible;
+		text-shadow: 0 0 5px black;
+		text-align: center;
+		width: 100%;
+		padding: 0 35% 0 35%;
+		margin: auto;
+	}
+}
+
 
 @media screen and (max-width: 600px) {
 	.content1 p{
@@ -482,18 +524,40 @@ font-family: 'Germania One', cursive;
 @media screen and (max-width: 600px) {
 	.content1 h2{
 		text-align: center;
+		margin: auto;
 		font-size: 40px;
+		width: 50%;
+		padding-top: 20%;
+		padding-bottom: -20%;
 	}
 }
 
 @media screen and (max-width: 600px) {
+	.content1-1 p3{
+	visibility: visible;
+	text-shadow: 0 0 5px black;
+	text-align: center;
+	width: 100%;
+	padding: 0 40% 0 40%;
+	margin: auto;
+		
+	}
+}
+
+
+@media screen and (max-width: 600px) {
 	.content1-1 p{
 		visibility: collapse;
+		align-content: center;
 	}
 
 	.content1-1 h2{
 		text-align: center;
+		margin: auto;
 		font-size: 40px;
+		width: 50%;
+		padding-top: 20%;
+		padding-bottom: -20%;
 	}
 }
 
